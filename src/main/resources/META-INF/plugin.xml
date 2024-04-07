@@ -1,0 +1,42 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>in.sudhi.processor.toml</id>
+    <name>Toml To Android Strings.xml</name>
+    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>org.jetbrains.android</depends>
+    <vendor email="devsudhi@icloud.com" url="https://sudhi.in">Sudhi</vendor>
+    <description><![CDATA[
+<h1>TOML - Android String.xml Plugin</h1>
+    <p>
+        This plugin is designed to facilitate the conversion of TOML files into Android <code>strings.xml</code> files.
+    </p>
+    <p>
+        To use this plugin, follow these steps:
+    </p>
+    <ol>
+        <li>Create your TOML file under the project root folder like <code>&lt;Project Root Folder&gt;/toml/anyname.toml</code>.</li>
+        <li>To support multiple languages, name the file with the language code as the extension. For example:
+            <ul>
+                <li><code>anyname_en.toml</code> for English</li>
+                <li><code>anyname_fr.toml</code> for French</li>
+            </ul>
+        </li>
+        <li>
+            Files with language extensions will be placed under corresponding <code>values-</code> directories in Android projects (e.g., <code>values-en</code> for English).
+        </li>
+    </ol>
+  ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+    <actions>
+        <group id="TomlToXML.GenerateAction" text="TOMLToXML" description="TOML to Android string.xml">
+            <add-to-group group-id="MainMenu" anchor="last" />
+            <action id="TomlToXmlAction" class="in.sudhi.toml.TomlToXmlAction" text="Generate Android String.xml" description="Convert TOML files to Android strings.xml format">
+                <keyboard-shortcut keymap="$default" first-keystroke="shift meta T"/>
+                <add-to-group group-id="ToolsMenu" anchor="last" />
+            </action>
+        </group>
+    </actions>
+
+</idea-plugin>
