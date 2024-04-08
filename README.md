@@ -1,5 +1,6 @@
 # TOML - Android String.xml Plugin
 
+
 This plugin is designed to facilitate the conversion of TOML files into Android `strings.xml` files.
 
 To use this plugin, follow these steps:
@@ -13,6 +14,8 @@ To use this plugin, follow these steps:
 
 
 To get started with the TOML to Android Strings.xml plugin in a JetBrains IDE, follow these steps:
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/w1gz3UdEN9g/0.jpg)](http://www.youtube.com/watch?v=w1gz3UdEN9g "TOML - Android String.xml Plugin")
 
 ### Installation Steps:
 1. **Install a JetBrains IDE**:
