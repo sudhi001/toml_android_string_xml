@@ -12,6 +12,46 @@ To use this plugin, follow these steps:
    These files with language extensions will be placed under corresponding `<code>values-</code>` directories in Android projects (e.g., `<code>values-en</code>` for English).
 
 
+To get started with the TOML to Android Strings.xml plugin in a JetBrains IDE, follow these steps:
+
+### Installation Steps:
+1. **Install a JetBrains IDE**:
+   - Make sure you have a compatible JetBrains IDE installed, such as IntelliJ IDEA, CLion, PyCharm, or any other IntelliJ-based IDE.
+   - Download and install the IDE from the JetBrains website: [JetBrains Products](https://www.jetbrains.com/products/).
+
+2. **Open Plugin Settings**:
+   - Launch the installed JetBrains IDE.
+   - Go to `Settings/Preferences` from the main menu (usually found under `File` or `IntelliJ IDEA` menu).
+
+3. **Install "Toml To Android Strings.xml" Plugin**:
+   - In the Settings/Preferences dialog, navigate to `Plugins`.
+   - Click on `Marketplace` or `Browse repositories` (depending on the IDE version).
+   - Search for "Toml To Android Strings.xml" plugin.
+   - Click on the plugin in the search results and then click `Install` to install the plugin.
+   - Follow any prompts to complete the installation process.
+
+### Usage Steps:
+1. **Create a "toml" Folder**:
+   - Navigate to the root directory of your project.
+   - Create a new folder named `toml`.
+
+2. **Add TOML Files**:
+   - Inside the `toml` folder, create a file named `message.toml`.
+   - Populate `message.toml` with your string key-value pairs using TOML format.
+
+3. **Support Multiple Languages**:
+   - For Arabic support, create a file named `message_ar.toml` inside the `toml` folder.
+   - For French support, create a file named `message_fr.toml` inside the `toml` folder.
+   - Use the naming convention `filename_<LanguageCode>.toml` for additional language files (e.g., `filename_en.toml`, `filename_es.toml`, etc.).
+
+4. **Access the "TOMLToXML" Menu**:
+   - Open your Android project in the JetBrains IDE.
+   - Look for the `TOMLToXML` menu option in the top toolbar of the IDE.
+   - Click on `TOMLToXML` to trigger the conversion process.
+   - The plugin will generate corresponding `strings.xml` files based on your TOML files, including localization for different languages.
+
+By following these steps, you'll be able to install and use the "Toml To Android Strings.xml" plugin to manage your string resources efficiently using TOML files within your JetBrains IDE. Enjoy developing with enhanced localization support!
+
 # Bugs or Requests
 
 If you come across any difficulties, don't hesitate to open an [issue](https://github.com/sudhi001/toml_viewer/issues) on GitHub. If you believe that the library lacks a particular feature, please create a [ticket](https://github.com/sudhi001/toml_viewer/issues) on GitHub, and I'll investigate it. Additionally, I welcome pull requests if you would like to contribute to the project.
@@ -26,6 +66,7 @@ This project is actively developed and maintained by a dedicated team of contrib
 
 - **Name:** Sudhi S
 - **GitHub:** [sudhi001](https://github.com/sudhi001)
+- **Twitter** [X Platform](https://twitter.com/su_dhi)
 - **Email:** devsudhi@icloud.com
 
 
